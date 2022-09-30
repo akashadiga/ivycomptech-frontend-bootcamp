@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form for logging into our website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Registration form for logging into our website.</h1>
+    <form name="register" onSubmit="return formValidation();">
+      <ul style="list-style: none;">
+        <li><label for="name">Name:</label></li>
+        <li><input type="text" name="name" size="15" required /></li>
+
+        <li><label for="id">Set User ID</label></li>
+        <li><input type="text" name="id" size="15" required /></li>
+
+        <li><label for="password">Set Password</label></li>
+        <li><input type="password" name="password" size="8" required /></li>
+
+        <div>
+          <li><label for="countryCode">Country Code</label></li>
+          <input type="number" name="countryCode" size="2" />
+          <li><label for="phone">Phone Number</label></li>
+          <input type="number" name="phone" size="10" />
+          
+        </div>
+
+        <li><label for="address">Address:</label></li>
+        <li>
+          <textarea name="address" id="address" aria-setsize="100"></textarea>
+        </li>
+
+        <li><label for="email">Email:</label></li>
+        <li ><input type="email" name="email" size="50" required /></li>
+
+        <li><label id="gender">Gender</label></li>
+        <li>
+          <input type="radio" name="msex" value="Male" /><span>Male</span>
+          <input type="radio" name="fsex" value="Female" /><span>Female</span>
+          <input type="radio" name="other" value="other" /><span>Other</span>
+        </li>
+
+        <li><input type="submit" name="submit" value="Submit" onclick="formValidation()" /></li>
+      </ul>
+    </form>
+  </body>
+</html>
