@@ -72,6 +72,14 @@
 // console.log(circle.getArea());
 // circle.getPerimeter();
 
+
+
+
+
+
+
+
+
 // class Name{
 //     constructor(fname, lname){
 //         this.fname=fname;
@@ -80,9 +88,9 @@
 //     fullName= function(){ return this.fname +" "+ this.lname};
 //     initials= function(){ return this.fname.charAt(0).toUpperCase() + ". "+ this. lname}
 // }
-// let name= new Name(John, smith);
-// name.fullName();
-// name.initials();
+// let n= new Name(John, smith);
+// console.log(n.fullName());
+// console.log(n.initials());
 
 
 
@@ -148,48 +156,46 @@
 
 
 
-function nameOfAncestorOrDescendant(number, gender){
-    if(gender!=="m" || gender!=="f")
-        return;
-    if(gender=="m"){
-    switch(number){
-        case -3:
-            return "great grandfather";
-        case -2:
-            return "grandfather";
-        case -1:
-            return "father";
-        case 0:
-            return "me!";
-        case 1:
-            return "son";
-        case 2:
-            return "grandson";
-        case 3:
-            return "great grandson";
-    }
-    }else{
-        switch(number){
-            case -3:
-                return "great grandmother";
-            case -2:
-                return "grandmother";
-            case -1:
-                return "mother";
-            case 0:
-                return "me!";
-            case 1:
-                return "daughter";
-            case 2:
-                return "granddaughter";
-            case 3:
-                return "great granddaughter";
-        }
-    }
+// function nameOfAncestorOrDescendant(number, gender){
+//     if(gender=="m"){
+//     switch(number){
+//         case -3:
+//             return "great grandfather";
+//         case -2:
+//             return "grandfather";
+//         case -1:
+//             return "father";
+//         case 0:
+//             return "me!";
+//         case 1:
+//             return "son";
+//         case 2:
+//             return "grandson";
+//         case 3:
+//             return "great grandson";
+//     }
+//     }else{
+//         switch(number){
+//             case -3:
+//                 return "great grandmother";
+//             case -2:
+//                 return "grandmother";
+//             case -1:
+//                 return "mother";
+//             case 0:
+//                 return "me!";
+//             case 1:
+//                 return "daughter";
+//             case 2:
+//                 return "granddaughter";
+//             case 3:
+//                 return "great granddaughter";
+//         }
+//     }
 
-}
+// }
 
-console.log(nameOfAncestorOrDescendant(-1, "m"));
+// console.log(nameOfAncestorOrDescendant(-1, "m"));
 
 
 
@@ -201,6 +207,44 @@ console.log(nameOfAncestorOrDescendant(-1, "m"));
 
 
 
+// function freeShipping(myCart){
+//     let values = Object.values(myCart);
+//     let output=0;
+//     for(let i=0; i<values.length; i++){
+//         output+=values[i];
+//     }
+//     if(output>=50)
+//         return true;
+//     else
+//         return false;
+// }
+
+// console.log(freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }));
+
+
+
+
+
+
+// function mostExpensive (jewelrys){
+//     let higestPrize=0;
+//     let jew=" ";
+//     for (let key in jewelrys) {
+//             value = jewelrys[key];
+//             if(higestPrize<value)
+//                 higestPrize=value;
+//                 jew=key;
+//     }
+//     return jew;
+// }
+
+
+// console.log(mostExpensive ({
+//     "Diamond Earrings": 980,
+//     "Gold Watch": 250,
+//     "Pearl Necklace": 4650
+//   }));
+  
 
 
 
