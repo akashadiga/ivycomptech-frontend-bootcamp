@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  background-color: #fbb034;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 300px;
+  padding: 150px;
+  border-radius: 700px;
+}
+
+button {
+  border: none;
+  background-color: rgb(78, 64, 166);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 19px;
+  height: 40px;
+  width: 65px;
+}
+
+h1{
+  color:#485461;
+}
+
+input{
+  border-radius: 70px;
+  height: 40px;
+  text-align: center;
+  font-size: 19px;
+}

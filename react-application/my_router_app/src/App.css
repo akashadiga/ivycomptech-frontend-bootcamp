@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #cfd8dc;
+}
+
+div {
+  border: 5px outset rgb(88, 143, 29);
+  background-color: lightblue;
+  text-align: center;
+}
